@@ -5,7 +5,7 @@ $plugin_info = array(
                  'pi_author'        => 'Mark Croxton',
                  'pi_author_url'    => 'http://www.hallmark-design.co.uk',
                  'pi_description'   => 'Register and persist POSTed form values',
-                 'pi_usage'         => My_plugin::usage()
+                 'pi_usage'         => Get_parameters::usage()
                );
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
@@ -78,7 +78,7 @@ class Get_parameters {
     {
 		ob_start(); 
 		?>
-		{exp:get_parameters post="limit|orderby|sort" id="a_unique_identifier" parse="inward"}
+		{exp:get_parameters post="limit|orderby|sort" id="a unique identifier" parse="inward"}
 			{exp:channel:entries channel="my_channel" paginate="both" limit="{limit}" orderby="{orderby}" sort="{sort}" }
 			  ... 
 			{/exp:channel:entries}
