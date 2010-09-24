@@ -91,6 +91,6 @@ class Get_parameters {
     }
 } 
 
-/* End of file pi.register_globals.php */ 
-/* Location: ./system/expressionengine/third_party/plugin_name/pi.register_globals.php */
+/* End of file pi.get_parameters.php */ 
+/* Location: ./system/expressionengine/third_party/plugin_name/pi.get_parameters.php */
  
